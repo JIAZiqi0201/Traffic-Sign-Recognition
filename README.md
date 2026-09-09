@@ -6,22 +6,39 @@ This project implements a Convolutional Neural Network (CNN) to classify traffic
 Classify traffic sign images into 5 categories:
 
 Class	Description
+
 0	Speed limits (e.g., 30 km/h, 50 km/h)
+
 1	Warning signs
+
 2	Mandatory actions
+
 3	Prohibitory signs
+
 4	Other signs
+
 🧠 Hierarchical Approach
+
 Level	Method	Type	Description
+
 1	Data Preprocessing	Pipeline	Normalization + One-Hot Encoding
+
 2	Train-Test Split	Custom	75/25 train-validation split
+
 3	Conv2D Layer	Supervised	Extract spatial features from images
+
 4	MaxPooling2D	Supervised	Downsample feature maps
+
 5	Dense Layer	Supervised	Fully connected classification layer
+
 6	Model Checkpoint	Callback	Save best model based on validation accuracy
+
 7	Evaluation	Metric	Accuracy + Loss monitoring
+
 🏗️ Architecture
+
 text
+
 Complete implementation
 │
 ├── Task 1: Data Split (2.5 pts)
